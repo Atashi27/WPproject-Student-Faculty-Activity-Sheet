@@ -1,0 +1,77 @@
+ul#m01 
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000066;
+        text-align: justify;
+    }
+
+li#m01 
+    {
+        float: left;
+    }
+
+li#m01 a 
+    {
+        display: block ;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+li#m01 a:hover 
+    {
+        background-color:#000099;
+    }
+
+h1,h2,h3,h4,h5,h6,p
+    {
+        font-family: times;
+        color:#000066;
+        letter-spacing: 0px;
+        line-height: 1;
+        word-spacing: 5px;
+        outline-color: #e6eeff;
+    }
+
+div#a1
+    {
+        background-color:#e6eeff;
+        background-image:url("images/dbit.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+blockquote#a11
+    {
+        background-color: #e6eeff;
+    }
+
+table
+    {
+        border-collapse: collapse;
+        width=100%;
+        font-family: Times;
+        vertical-align:bottom;
+        padding:5px;
+    }    
+
+tr#a10:nth-child(even) 
+    {
+        background-color: #ccf5ff;
+    }
+    
+tr#a10a:nth-child(odd) 
+    {
+        background-color: #ccf5ff;
+    }
+.error
+    {
+        font-size: 12;
+        font-family: arial;
+        color:red;
+        position: relative;
+    }

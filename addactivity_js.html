@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head lang="en-US">
+		<title>SFAS-Add activity</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Activity list">
+		<meta name="keywords" content="DBIT,Faculty,Student,Project">
+		<meta name="author" content="Atashi">
+		<!-- <meta http-equiv="refresh" content="60">  -->
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="icon" type="image/png" href="logo.png"/>
+		<script src="myjs.js"></script>
+	</head>
+	<body>
+		<div id="a1">
+	<table align="center" border=0 style="width:70%">
+			
+			<th><img src="images/logo.png" align="right" alt="DBIT LOGO" width="150" height="150"></th>
+			<th><h1>DON BOSCO INSTITUTE OF TECHNOLOGY</h1>
+			<h2>DEPARTMENT OF INFORMATION TECHNOLOGY</h2>
+			<h3>STUDENT FACULTY ACTIVITY SHEET</h3></td>
+	</th>
+		</tr>
+		</table>
+		</div>
+	<hr>
+	<ul id="m01">
+	  <li id="m01"><table><td><img src="images/home_icon.jpg" align="right" alt="Home LOGO" width="50" height="50"></td>
+		<td><a href="SFAShome.html">Home</a></td></table></li>
+	  <li id="m01"><table><td><img src="images/add_icon.jpg" align="right" alt="Add LOGO" width="50" height="50"></td>
+		<td><a href="addactivity_jq.html">Add Activity</a></td></table></li>
+	  <li id="m01"><table><td><img src="images/search_icon.jpg" align="right" alt="Search LOGO" width="50" height="50"></td>
+		<td><a href="search.html">Search Team</a></td></table></li>
+	  <li id="m01"><table><td><img src="images/list_all_icon.jpg" align="right" alt="List LOGO" width="50" height="50"></td>
+		<td><a href="allactivity.html">All Activity list</a></td></table></li>
+	</ul>
+	<hr>
+	<blockquote>
+	<fieldset>
+	 	<legend><em>Add Activity:</em></legend>
+	 		<blockquote id="a11">
+			<form name="myform" action="success.html" method="post" onsubmit="return validateform()">
+				<table align="center" border="0">
+				<tr>
+					<td>
+						<b>Faculty name</b>
+					</td>
+					<td>
+						:
+					</td> 
+					<td>
+		 				<select name="fname">
+		 					<option value="notallowed" disabled="1" selected="selected">Select an option</option>
+		   					<option value="anagha">Anagha Shastri</option>
+							<option value="aruna">Aruna Khubalkhar</option>
+							<option value="janhavi">Janhavi Baikerikar</option>
+							<option value="nilesh">Nilesh Ghavate</option>
+							<option value="prasad">Prasad</option>
+							<option value="shiv">Shiv Negi</option>
+							<option value="sushree">Sushree Satapatdy</option>
+							<option value="tayyab" >Tayyab Ali Sayyad</option>
+		 					<option value="uday">Uday Nayak</option>
+							<option value="vaishali">Vaishali</option>
+						</select>
+					</td>
+				</tr>
+				<br>
+				<tr>
+					<td>
+						<b>Title of Project/Task</b>
+					</td>
+					<td>
+						:
+					</td>
+					<td>
+		  				<input type="text" name="ptitle"  >
+		 		 		<br>
+	 		 		</td>
+	 		 	</tr>
+	 		 	<tr>
+	 		 		<td>
+						<b>Start date</b>
+					</td>
+					<td>
+						:
+					</td>
+					<td>
+		 		 		<input type="date" name="sdate" placeholder="mm/dd/yyyy">
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>End date</b>
+					</td>
+					<td>
+						:
+		  			</td>
+		  			<td>
+		  				<input type="date" name="edate"  placeholder="mm/dd/yyyy">
+						<br>
+					</td>
+				</tr>
+				</tr>
+				<!-- <tr>
+					<td>
+						<b>Duration(in days)</b>
+					</td>
+					<td>
+						:
+					</td>
+					<td>
+		  				<input type="text" id="abcd" name="duration" value="" onkeydown="getDuration()">
+						<br>
+					</td>		
+				</tr> -->
+				<tr>
+					<td>
+						<b>No. of students</b>
+					</td>
+					<td>
+						:
+					</td>
+					<td>
+		  				<input type="number" name="noofstud" min="1" max="20"  >
+						<br>
+					</td>		
+				</tr>
+				</table>
+				<br>
+				<table align="center" border="0">
+					<tr>
+						<th colspan="7">
+							Enter the details of team members:
+						</th>
+					</tr>
+					<tr>
+						<th>
+							No.
+						</th>
+						<th>
+							Name
+						</th>
+						<th>
+							Department
+						</th>
+						<th>
+							Class
+						</th>
+						<th>
+							Role
+						</th>
+						<th>
+							Email-ID
+						</th>
+						<th>
+							Contact
+						</th>
+					</tr>
+					<tr>
+						<td>
+							1.
+						</td>
+						<td>
+							<input type="text" name="name1" >
+						</td>
+						<td>
+							<select name="dept1"  >
+								<option value="notallowed" disabled="1" selected="selected">Select</option>
+								<option value="COMPS">COMPS</option>
+								<option value="EXTC">EXTC</option>
+								<option value="IT">IT</option>
+								<option value="MECH">MECH</option>
+							</select>
+						</td>
+						<td>
+							<select name="class1"  >
+								<option value="notallowed" disabled="1" selected="selected">Select</option>
+								<option value="FE">FE</option>
+								<option value="SE">SE</option>
+								<option value="TE">TE</option>
+								<option value="BE">BE</option>	
+							</select>
+						</td>
+						<td>
+							<input type="text" name="role1"  >
+						</td>
+						<td>
+							<input type="email" name="email1"  >
+						</td>
+						<td>
+							<input type="text" name="telno1"  >
+						</td>
+					</tr>
+						<tr>
+						<td>
+							2.
+						</td>
+						<td>
+							<input type="text" name="name2"  >
+						</td>
+						<td>
+							<select name="dept2"  >
+								<option value="notallowed" disabled="1" selected="selected">Select</option>
+								<option value="COMPS">COMPS</option>
+								<option value="EXTC">EXTC</option>
+								<option value="IT">IT</option>
+								<option value="MECH">MECH</option>
+							</select>
+						</td>
+						<td>
+							<select name="class2"  >
+								<option value="notallowed" disabled="1" selected="selected">Select</option>
+								<option value="FE">FE</option>
+								<option value="SE">SE</option>
+								<option value="TE">TE</option>
+								<option value="BE">BE</option>	
+							</select>
+						</td>
+						<td>
+							<input type="text" name="role2"  >
+						</td>
+						<td>
+							<input type="email" name="email2"  >
+						</td>
+						<td>
+							<input type="text" name="telno2"  >
+						</td>
+					</tr>
+						<tr>
+						<td>
+							3.
+						</td>
+						<td>
+							<input type="text" name="name3"  >
+						</td>
+						<td>
+							<select name="dept3"  >
+								<option value="notallowed" disabled="1" selected="selected">Select</option>
+								<option value="COMPS">COMPS</option>
+								<option value="EXTC">EXTC</option>
+								<option value="IT">IT</option>
+								<option value="MECH">MECH</option>
+							</select>
+						</td>
+						<td>
+							<select name="class3"  >
+								<option value="notallowed" disabled="1" selected="selected">Select</option>
+								<option value="FE">FE</option>
+								<option value="SE">SE</option>
+								<option value="TE">TE</option>
+								<option value="BE">BE</option>	
+							</select>
+						</td>
+						<td>
+							<input type="text" name="role3"  >
+						</td>
+						<td>
+							<input type="email" name="email3"  >
+						</td>
+						<td>
+							<input type="text" name="telno3"  >
+						</td>
+					</tr>
+						<tr>
+						<td>
+							4.
+						</td>
+						<td>
+							<input type="text" name="name4"  >
+						</td>
+						<td>
+							<select name="dept4"  >
+								<option value="notallowed" disabled="1" selected="selected">Select</option>
+								<option value="COMPS">COMPS</option>
+								<option value="EXTC">EXTC</option>
+								<option value="IT">IT</option>
+								<option value="MECH">MECH</option>
+							</select>
+						</td>
+						<td>
+							<select name="class4"  >
+								<option value="notallowed" disabled="1" selected="selected">Select</option>
+								<option value="FE">FE</option>
+								<option value="SE">SE</option>
+								<option value="TE">TE</option>
+								<option value="BE">BE</option>	
+							</select>
+						</td>
+						<td>
+							<input type="text" name="role4"  >
+						</td>
+						<td>
+							<input type="email" name="email4"  >
+						</td>
+						<td>
+							<input type="text" name="telno4"  >
+						</td>
+					</tr>
+						<tr>
+						<td>
+							5.
+						</td>
+						<td>
+							<input type="text" name="name5"  >
+						</td>
+						<td>
+							<select name="dept5"  >
+								<option value="notallowed" disabled="1" selected="selected">Select</option>
+								<option value="COMPS">COMPS</option>
+								<option value="EXTC">EXTC</option>
+								<option value="IT">IT</option>
+								<option value="MECH">MECH</option>
+							</select>
+						</td>
+						<td>
+							<select name="class5"  >
+								<option value="notallowed" disabled="1" selected="selected">Select</option>
+								<option value="FE">FE</option>
+								<option value="SE">SE</option>
+								<option value="TE">TE</option>
+								<option value="BE">BE</option>	
+							</select>
+						</td>
+						<td>
+							<input type="text" name="role5"  >
+						</td>
+						<td>
+							<input type="email" name="email5"  >
+						</td>
+						<td>
+							<input type="text" name="telno5"  >
+						</td>
+					</tr>
+				</table>
+				<br>
+				<table align="center" border="0">
+				<tr>
+					<td>
+						<input type="submit" value="Submit">
+					</td>
+					<td><pre>  </pre>
+					</td>
+					<td>
+						<input type="reset" value="Reset">
+					</td>
+				</tr>
+				</table>
+				<p><sub>Note: All fields are compulsory</sub></p>
+			</form>
+			<br>
+		<blockquote>
+	</fieldset>
+	</blockquote>
+<footer><sub><em>Page created and maintained by Atashi Khatua</em></sub></footer> 
+</body>
+</html>
