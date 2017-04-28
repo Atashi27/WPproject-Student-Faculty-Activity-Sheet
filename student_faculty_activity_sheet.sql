@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 26, 2017 at 04:57 PM
+-- Generation Time: Apr 28, 2017 at 04:21 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -41,7 +41,12 @@ INSERT INTO `link_project_student` (`project_id`, `student_id`, `role`) VALUES
 ('ITp1', '2016135555', 'Resource manager'),
 ('ITp1', '2016138975', 'Back end developer'),
 ('ITp1', '2016134587', 'Database manager'),
-('ITp1', '2016134020', 'Front end developer');
+('ITp1', '2016134020', 'Front end developer'),
+('ITp2', '2015134270', 'Database Manager'),
+('ITp2', '2013134125', 'Front end web developer'),
+('ITp2', '2013138974', 'Back end web developer'),
+('ITp2', '2013138977', 'Android developer'),
+('ITp2', '2013138956', 'Android web connectivity');
 
 -- --------------------------------------------------------
 
@@ -63,7 +68,8 @@ CREATE TABLE `project_details` (
 --
 
 INSERT INTO `project_details` (`title`, `faculty_name`, `start_date`, `end_date`, `no_of_students`, `project_id`) VALUES
-('Web Portal for handicaped', 'Janhavi Baikerikar', '2017-04-26', '2017-07-31', 5, '3');
+('Web Portal for handicaped', 'Janhavi Baikerikar', '2017-04-26', '2017-07-31', 5, 'ITp1'),
+('Ewaste management and evaluation of health hazards', 'Nilesh Ghavate', '2017-04-06', '2017-06-30', 5, 'ITp2');
 
 -- --------------------------------------------------------
 
@@ -85,11 +91,16 @@ CREATE TABLE `student_details` (
 --
 
 INSERT INTO `student_details` (`name`, `dept`, `class`, `email_id`, `contact`, `student_id`) VALUES
+('Krupal Jadhav', 'IT', 'BE', 'kjjadhav@gmail.com', '9878451236', '2013134125'),
+('Atashi Khatua', 'IT', 'SE', 'atashi.khatua@gmail.com', '8976590206', '2015134270'),
 ('Rakesh Mishra', 'IT', 'FE', 'rakesh.mishra@gmail.com', '9666666666', '2016135555'),
 ('Sachin Pandit', 'IT', 'FE', 'sachin.pandit@gmail.com', '9555555555', '2016139875'),
 ('Abhishek Mathur', 'IT', 'FE', 'abhishek.mathur@gmail.com', '9777777777', '2016138975'),
 ('Sahil Sharma', 'IT', 'FE', 'sahil.sharma@gmail.com', '9888888888', '2016134587'),
-('Rohit Varma', 'IT', 'FE', 'rohit.varma@gmail.com', '9999999999', '2016134020');
+('Rohit Varma', 'IT', 'FE', 'rohit.varma@gmail.com', '9999999999', '2016134020'),
+('Deepesh Gupta', 'IT', 'BE', 'deepeshgupta@gmail.com', '8794561232', '2013138974'),
+('Likitha Shettigar', 'IT', 'BE', 'likishettigar@gmail.com', '8956235623', '2013138977'),
+('Manish Jain', 'IT', 'BE', 'manishjain@gmail.com', '8585623214', '2013138956');
 
 --
 -- Indexes for dumped tables
